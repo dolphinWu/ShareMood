@@ -14,7 +14,7 @@
 		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.0.xsd">
 
 	<!-- 扫描包 -->
-	<context:component-scan base-package="xin.dolphinfun.sharemood.component.*">
+	<context:component-scan base-package="xin.dolphinfun.sharemood.*">
 		<context:exclude-filter type="annotation"
 			expression="org.springframework.stereotype.Controller" />
 	</context:component-scan>
@@ -71,6 +71,6 @@
 
 	<!-- mapper扫描包 -->
 	<bean id="mapperScannerConfigurer" class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-		<property name="basePackage" value="xin.dolphinfun.sharemood.component.mapper"></property>
+		<property name="basePackage" value="xin.dolphinfun.sharemood.mapper"></property>
 	</bean>
 </beans>
