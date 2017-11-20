@@ -22,4 +22,10 @@ public class DemoController {
 		request.setAttribute("demoEntity", demoEntity);
 		return "pages/demo/demo";
 	}
+	
+	@RequestMapping("/login")
+	public String login(HttpServletRequest request) {
+		return "pages/user/login";
+	}
+	
 }
